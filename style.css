@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(231, 229, 229);
+    margin-top: 50px;
+}
+
+.pricing-container {
+    height: 97vh;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pricing-plan{
+    background-color: rgb(255, 255, 255);
+    flex-basis: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+ul.plan-features {
+    list-style-type: "✓";
+    padding-left: 25px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+li{
+    padding: 5px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+.plan-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45pt;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  text-align: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.plan-price {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70pt;
+    color: rgb(150, 144, 144); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Basic {
+    background-image: linear-gradient(rgb(0, 255, 229), rgba(140, 255, 0, 0.905));
+}
+#Standard {
+    background-image: linear-gradient(rgba(255, 0, 149, 0.864), rgb(251, 0, 255));
+}
+#Premium {
+    background-image: linear-gradient(rgba(149, 0, 255, 0.864), rgb(0, 136, 255));
+}
+.plan-button {
+    align-self: center;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+.button {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover {
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
+    transition: 0.6s;
+}
+
+a {
+    text-decoration: none;
+  }
+
+  .pricing-plan:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: 0.5s;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 1250px) {
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+    } 
+    .pricing-plan {
+        flex-basis: 250px;
+        flex-shrink: 1;
+    }
+    .plan-button {
+        width: 100%;
+    }
+}
